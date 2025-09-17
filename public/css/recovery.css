@@ -1,0 +1,154 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-image: url('../images/background-login.png   ');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 320px;
+    overflow-y: clip;
+}
+
+.page-header {
+    width: 100%;
+}
+
+.bar-blue {
+    height: 30px;
+    background-color: #001D4C; 
+}
+
+.bar-gradient {
+    height: 10px;
+    background: linear-gradient(to right,#DBA800,#796217,#251B87,#B24B4B)
+}
+
+.bar-white {
+    height: 30px;
+    background-color: #fff;
+}
+
+.login-container {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 20px;
+}
+
+.login-box {
+    background-color: #fef9e8; 
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    grid-column: 2;
+}
+
+.login-box h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.login-box .subtitle {
+    color: #1E6542;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.input-group input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FFE0B3;
+    font-size: 1em;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.8em;
+    color: #a0998a;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.input-group input:focus {
+    outline: 2px solid #1c3d6e; 
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background-color: #FF6969; 
+}
+
+.btn-primary {
+    background-color: #005182; 
+}
+
+.logos {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.logos img {
+    height: 35px;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        grid-template-columns: 1fr; 
+    }
+    .login-box {
+        grid-column: 1; 
+    }
+    .login-box h1 {
+        font-size: 1.8em;
+    }
+    .logos {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-box {
+        padding: 30px 20px;
+    }
+}
